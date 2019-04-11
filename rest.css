@@ -1,0 +1,403 @@
+* {
+ padding:0px;
+ margin:0px;
+ }
+ 
+ body {
+	 font-size:20px;
+	 color:white;
+	 overflow-x:hidden;
+	 font-family: 'Flamenco', cursive;
+	 background:#282828;
+	 background:linear-gradient(-45deg, #ee7752 , #e73c7e,#23a6d5 , #23d5ab);
+	 background-size:400% 400%;
+	 animation:Gradient 10s ease infinite;
+ }
+ 
+ @-webkit-keyframes Gradient {
+	    
+	     0%
+		  {
+		     background-position:0% 50% 
+		  }
+		 50% 
+		  {
+		     background-position:50% 100% 
+		  }
+		 100% 
+		  {
+		     background-position:0% 50% 
+		  }
+ }
+	 
+ 
+ .clearfix:after {
+	 content:".";
+	  visibility:hidden;
+	  display:block;
+	  height:0px;
+	  clear:both;
+ }
+                                      /*clearfix is a way for an element to automatically clear its child elements so that you don't need to add additional markup.*/
+ 
+ img {	
+	 width:280px;
+	 height:200px;
+	 float:left;
+     margin-top:20px;
+	 border-radius:50px;
+ }
+ 
+ header {
+	  background-image:linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url('restaurants-background-images.jpg'); /* TO CREATE A LINEAR GRADIENT YOU MUST DEFINE AT LEAST TWO COLORS*/
+	  background-size:cover;
+	  height:100vh;
+	  
+ }  /*WITH A LINEAR GRADIENT EFFECT YOU CAN ALSO SET THE STARTING POINT AND A DIRECTION(OR AN ANGLE) ALONG WITH THE GRADIENT EFFECT*/
+ 
+ .row {
+	 max-width:1180px;
+	 margin:0 auto;
+ }
+ 
+ 
+ .list  {
+	   float:right;
+	   margin-top:60px;
+	  
+ }
+ 
+.list li {
+    display:inline-block;
+	margin-left:40px;
+	
+}	
+
+.list li a{
+	padding:5px 0px;
+	text-decoration:none;
+	text-transform:uppercase;          
+	font-size:90%;
+	font-weight:100;
+	color:white;
+}
+
+.list li a:hover{
+	border-bottom: 2px dotted orange;
+	color:orange;
+	font-size:120%;
+	transition:all 1.5s ease;
+	
+}
+	
+
+.main-content{
+	width:1180px;
+	position:absolute;
+	top:55%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+h1 {
+    font-size:240%;
+    word-spacing:5px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+	letter-spacing:3px;
+	font-weight:lighter;
+	
+}
+
+.btn {
+	
+	display:inline-block;
+	padding:10px 30px;
+	font-weight:lighter;
+	text-transform:uppercase;
+	border-radius:200px;
+	transition:background-color 0.2s , border 0.2s , color 0.2s ;
+	text-decoration:none;
+	
+	
+}
+
+	
+.but1 {
+	
+	 color:orange;
+	 background-color:transparent;
+	 margin-right:15px;
+	 border:1px solid orange;
+}
+
+.but2 {
+	 
+	  background-color:transparent;
+	  color:white;
+	  border:1px solid #fff;
+}
+	
+.but1:hover {
+
+  	background-color:#fff;
+}
+
+.but2:hover{
+	background-color:orange;
+}
+	   
+.colorchange {
+      animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange {
+    
+	0%{color:purple;}
+	25%{color:white;}
+	50%{color:green;}
+	100%{color:orange;}
+	   
+}	   
+
+.icon {
+	 display:none;
+}
+	   
+	 /*////////// RESPONSIVE QUERIES ///////// */
+
+
+@media only screen and (max-width:1180px) {
+	.main-content{
+		width:100%;
+		padding:0 2%;
+	}
+
+}
+	   
+	   
+@media only screen and (max-width:998px) {
+	
+	h1 
+	{
+		 font-size:200%;
+		 transition:0.6s;
+	}
+	
+}
+	   
+@media only screen and (max-width:768px){
+
+h1 
+{
+   font-size:180%;
+}
+	
+}
+
+@media only screen and (max-width:848px){
+.list {
+	display:none;
+}
+.icon {
+	 display:inline-block;
+	 color:#fff;
+	 float:right;
+	 margin-top:30px;
+	 margin-right:20px;
+}
+.list {float:left;}
+  
+.list li{
+	 display:block;
+	 margin-top:10px;
+}
+}
+
+@media only screen and (max-width:330px){
+	.but1 {
+		margin-bottom:20px;
+	}
+	h1 {
+		 font-size:140%;
+	}
+	
+	
+}
+/*//// 2ND SLIDE RESPONSIVE QUERIES STARTS ///// */
+
+
+@media (max-width:1517px)
+{
+	
+	.colorz img
+	{
+       width:75%;	
+       height:90%;
+       transition:0.7s;	   
+	}
+	
+	
+}
+
+@media (max-width:1500px)
+{
+	
+	.colorz img
+	{
+       width:70%;	
+       height:85%;
+       transition:0.7s;	   
+	}
+	
+}
+
+@media (max-width:1020px)
+{
+	.colorz img
+	{
+       width:65%;
+	   height:85%;
+       transition:0.7s;	   
+	}
+	
+}
+
+@media (max-width:874px)
+{
+	
+	.list2
+	{
+       position:absolute;
+	   top:110%;
+	   right:10px;
+	}
+	
+	
+}
+
+
+   /*//// 2ND RESPONSIVE QUERIES ENDS HERE /////*/   
+.container {
+         background-image:linear-gradient(rgba(11,0,11,1), rgba(10,0.7,4,0.8) , rgba(4,0.8,9,0.6) ,rgba(0,0,0,0));  
+         height:100px;
+         width:100%;		 
+	    
+}
+
+
+.image2 {
+ 
+ 	height:660px;
+	width:80%;
+	float:left;
+}	
+ 
+.list2 {
+
+   float:right;	
+   width:300px;
+   height:680px;
+   
+   
+}  
+.list2 ul li {
+	list-style:none;
+	margin-top:70px;
+	border-radius:200px; 
+	text-align:center;
+    width:160px;
+    height:60px;
+    line-height:60px;
+	box-shadow: 8px 2.5px 17px #000000;
+	font-size:35px;
+	font-weight:lighter;
+	transition:0.8s;
+}	
+
+.list2 ul li a{
+	
+	text-decoration:none;
+	line-height:50px;`
+	
+	
+}
+.list2 ul {
+    
+     display:inline-block;
+	 margin:50px;
+	
+    	 
+}
+	 	
+.b1 {
+  
+       background:-webkit-linear-gradient(0deg,transparent 50% ,rgba( 255, 223, 155 , 0.5)  50%);
+	   background-size:400px 80px;       /*if you want to change your background size (SLIDE COLOR) then you have to adjust the background size */
+	   border:2px solid  rgba( 255, 223, 155 , 0.6) ; 
+	 
+}
+
+.b1:hover {
+	background-position:200px 0;  /*it means that is your starting and ending position of background*/
+	box-shadow:8px 3px 60px #000000;
+	width:157px;
+	height:57px;
+	
+}
+
+.b2 {
+  
+       background:-webkit-linear-gradient(0deg,transparent 50% ,rgba( 255, 223, 155 , 0.5)  50%);
+	   background-size:400px 80px;
+	   border:2px solid  rgba( 255, 223, 155 , 0.6) ; 
+	 
+}
+
+.b2:hover {
+	background-position:200px 0;
+	box-shadow:8px 3px 60px #000000;
+	width:157px;
+	height:57px;
+}
+
+.b3 {
+  
+       background:-webkit-linear-gradient(0deg,transparent 50% ,rgba( 255, 223, 155 , 0.5)  50%);
+	   background-size:400px 80px;
+	   border:2px solid  rgba( 255, 223, 155 , 0.6) ; 
+	 
+}
+
+.b3:hover {
+	background-position:200px 0; 
+	box-shadow:8px 3px 60px #000000;
+	width:157px;
+	height:57px;
+}
+
+.b4 {
+  
+       background:-webkit-linear-gradient(0deg,transparent 50% ,rgba( 255, 223, 155 , 0.5)  50%);
+	   background-size:400px 200px;
+	   border:2px solid  rgba( 255, 223, 155 , 0.6) ; 
+	 
+}
+
+.b4:hover {
+	background-position:200px 0;
+	box-shadow:8px 3px 60px #000000;
+	width:157px;
+	height:57px;
+}
+
+.list2 ul li a:active {
+	
+	   color:green;
+}
+
+.list2 ul li a:visited {
+	  color:red;
+}
+
+
